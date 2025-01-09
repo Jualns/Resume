@@ -14,13 +14,13 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     padding-bottom: 1em;
 }
 
 h3 {
-    font-size: 1em;
-    padding-bottom: 1em;
+    font-size: 1.5em;
+    padding-bottom: 0.2em;
 }
 
 main { 
@@ -60,6 +60,64 @@ h1, h2, h3 {
 #mainLeft {
     border-right: 1px solid lightgray;
 }
+
+/* General Styles */
+#mainRight {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.company-container {
+    border-left: 4px solid #0073b1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.company-header h3 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.company-header p {
+    margin: 5px 0 15px;
+    color: #555;
+    font-style: italic;
+}
+
+/* Role-specific styles */
+.role-container {
+    margin-left: 20px;
+    border-left: 2px solid #0073b1;
+    padding-left: 15px;
+}
+
+.role {
+    margin-bottom: 20px;
+}
+
+.role h4 {
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.role p {
+    margin: 5px 0 10px;
+    color: #555;
+    font-style: italic;
+}
+
+.role ul {
+    padding-left: 20px;
+    margin: 0;
+    list-style: disc;
+}
+
+.role ul li {
+    margin-bottom: 10px;
+}
+
+
 
 /* Specific to  Section languages */
 /*
