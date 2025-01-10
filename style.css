@@ -67,7 +67,7 @@ h1, h2, h3 {
     margin: 20px;
 }
 
-.company-container {
+.role-container {
     border-left: 4px solid #0073b1;
     background-color: #f9f9f9;
     padding: 20px;
@@ -75,7 +75,7 @@ h1, h2, h3 {
 }
 
 .company-header h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 0;
 }
 
@@ -86,7 +86,7 @@ h1, h2, h3 {
 }
 
 /* Role-specific styles */
-.role-container {
+.company-container {
     margin-left: 20px;
     border-left: 2px solid #0073b1;
     padding-left: 15px;
@@ -97,7 +97,7 @@ h1, h2, h3 {
 }
 
 .role h4 {
-    font-size: 1.3em;
+    font-size: 1.5em;
     margin: 0;
 }
 
