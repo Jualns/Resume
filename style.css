@@ -7,14 +7,14 @@ body {
 }
 
 h1 {
-    font-size: 3em;
-    letter-spacing: .6em;
+    font-size: 2.5em;
+    letter-spacing: .2em;
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     padding-bottom: 1em;
 }
 
@@ -33,6 +33,15 @@ header {
     text-align: center;
     margin: auto 2em;
 }
+
+.job-title {
+    font-size: 1.4em; /* Ajuste o tamanho da fonte */
+    font-weight: bold; /* Deixe o texto em negrito */
+    color: #0073b1; /* Altere a cor para um azul profissional */
+    text-transform: uppercase; /* Transforme o texto para maiúsculas */
+    letter-spacing: 0.1em; /* Adicione espaçamento entre as letras */
+    display: block; /* Garante que o texto ocupa uma nova linha */
+} 
 
 section {
     margin: auto 1em 4em 2em;
@@ -120,41 +129,25 @@ h1, h2, h3 {
 
 
 /* Specific to  Section languages */
-/*
-.languages {
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    margin: auto;
-}
 
 .languages .section-title {
-    font-size: 2rem;
-    color: #2d2d2d;
-    text-align: center;
-    margin-bottom: 15px;
+    padding-bottom: 0;
 }
 
 .languages .language-list {
-    list-style-type: none;
     padding: 0;
 }
 
 .languages .language-item {
-    font-size: 1.1rem;
-    color: #4a4a4a;
     padding: 5px 0;
     border-bottom: 1px solid #ddd;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .languages .language-name {
     font-weight: bold;
-    color: #007bff;
+    color: #0054ad;
 }
 
 .languages .language-level {
@@ -165,4 +158,3 @@ h1, h2, h3 {
 .languages .language-item:last-child {
     border-bottom: none;
 }
-*/
