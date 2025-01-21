@@ -66,71 +66,6 @@ h1, h2, h3 {
     margin-bottom: 0;
 }
 
-
-/* General Styles */
-#mainLeft {
-    border-right: 1px solid lightgray;
-}
-
-#mainRight {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-}
-
-/* Specific to  Role and Company */
-.role-container {
-    border-left: 4px solid #0073b1;
-    background-color: #f9f9f9;
-    padding: 15px;
-    margin-bottom: 20px;
-}
-
-.company-header h3 {
-    font-size: 1.2em;
-    margin: 0;
-}
-
-.company-header p {
-    margin: 1px 15px 5px;
-    color: #555;
-    font-style: italic;
-}
-
-.company-description {
-    margin-bottom: 15px !important;
-}
-
-
-.company-container {
-    border-left: 2px solid #0073b1;
-    padding-left: 15px;
-}
-
-.role {
-    margin-bottom: 20px;
-}
-
-.role h4 {
-    font-size: 1.5em;
-    margin: 0;
-}
-
-.role p {
-    margin: 5px 0 10px;
-    color: #555;
-    font-style: italic;
-}
-
-.role ul {
-    padding-left: 20px;
-    margin: 0;
-    list-style: disc;
-}
-
-.role ul li {
-    margin-bottom: 10px;
-}
-
 /* Specific to  Table of Contents */
 #table-of-contents {
     background-color: #f9f9f9;
@@ -166,6 +101,122 @@ h1, h2, h3 {
     color: #0054ad;
 }
 
+/* General Styles */
+#mainLeft {
+    border-right: 1px solid lightgray;
+}
+
+#mainRight {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Specific to  Role and Company */
+.role-container {
+    border-left: 4px solid #0073b1;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.company-header h3 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.company-header p {
+    margin: 1px 15px 5px;
+    color: #555;
+    font-style: italic;
+}
+
+.company-description {
+    margin-bottom: 15px !important;
+}
+
+
+.company-container {
+    border-left: 2px solid #0073b1;
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+
+.role {
+    margin-bottom: 20px;
+}
+
+.role h4 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.role p {
+    margin: 5px 0 10px;
+    color: #555;
+    font-style: italic;
+}
+
+.role ul {
+    padding-left: 20px;
+    margin: 0;
+    list-style: disc;
+}
+
+.role ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilo para a seção de Educação */
+.education-container {
+    border-left: 2px solid #0054ad;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.education-header h3 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.education-header p {
+    margin: 1px 15px 5px;
+    color: #555;
+    font-style: italic;
+}
+
+.education-description {
+    margin-bottom: 15px !important;
+}
+
+/* Estilo para os cursos dentro da seção de Educação */
+.course-container {
+    border-left: 4px solid #0073b1;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.course-title {
+    font-size: 1.5em;
+    margin: 0;
+    color: #0073b1;
+}
+
+.course-summary {
+    margin: 5px 0 10px;
+    color: #555;
+    font-style: italic;
+}
+
+.course-details {
+    padding-left: 20px;
+    margin: 0;
+    list-style: disc;
+}
+
+.course-details li {
+    margin-bottom: 10px;
+}
 
 
 /* Specific to  Section languages */
