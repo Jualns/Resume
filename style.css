@@ -2,8 +2,12 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
-    max-width: 960px;
-    margin: auto;
+    max-width: 100%;
+    margin: 0;
+}
+
+main { 
+    display: flex;
 }
 
 h1 {
@@ -21,12 +25,6 @@ h2 {
 h3 {
     font-size: 1.5em;
     padding-bottom: 0.2em;
-}
-
-main { 
-    display: grid;
-    grid-template-columns: 25% 75%;
-    margin-top: 3em;
 }
 
 header {
@@ -103,12 +101,21 @@ h1, h2, h3 {
 
 /* General Styles */
 #mainLeft {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 20vw;
+    height: 100vh;
     border-right: 1px solid lightgray;
+    background-color: #f9f9f9;
+    padding: 1em;
+    overflow-y: auto;
 }
 
 #mainRight {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    margin-left: 20vw;
+    width: 80vw;
+    padding: 2em;
 }
 
 /* Specific to  Role and Company */
