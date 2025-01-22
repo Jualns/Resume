@@ -6,9 +6,52 @@ body {
     margin: 0;
 }
 
+header {
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Layout Principal */
 main { 
     display: flex;
 }
+
+/* Conteúdo Principal - Esquerda */
+#content {
+    width: 80%;
+    padding: 2em;
+}
+
+/* Barra Lateral - Direita */
+#sidebar {
+    width: 20%;
+    padding: 2em;
+}
+
+/* Estilo do Sidebar fixo ao rolar */
+#sidebar-container {
+    position: sticky;
+    top: 20px;
+}
+
+/* Table of Contents */
+#table-of-contents {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Contato */
+#contact {
+    background-color: #eef5f9;
+    border: 1px solid #cce7f0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
 
 h1 {
     font-size: 2.5em;
@@ -25,11 +68,6 @@ h2 {
 h3 {
     font-size: 1.5em;
     padding-bottom: 0.2em;
-}
-
-header {
-    text-align: center;
-    margin: auto 2em;
 }
 
 .job-title {
@@ -62,60 +100,6 @@ hr {
 h1, h2, h3 {
     font-weight: 100;
     margin-bottom: 0;
-}
-
-/* Specific to  Table of Contents */
-#table-of-contents {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin: 20px 0;
-    border-radius: 8px;
-}
-
-#table-of-contents h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #0073b1;
-}
-
-#table-of-contents ul {
-    list-style: none; 
-    padding: 0;
-}
-
-#table-of-contents li {
-    margin: 5px 0;
-}
-
-#table-of-contents a {
-    text-decoration: none;
-    color: #0073b1;
-    font-weight: bold;
-}
-
-#table-of-contents a:hover {
-    text-decoration: underline;
-    color: #0054ad;
-}
-
-/* General Styles */
-#mainLeft {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 20vw;
-    height: 100vh;
-    border-right: 1px solid lightgray;
-    background-color: #f9f9f9;
-    padding: 1em;
-    overflow-y: auto;
-}
-
-#mainRight {
-    margin-left: 20vw;
-    width: 80vw;
-    padding: 2em;
 }
 
 /* Specific to  Role and Company */
@@ -223,36 +207,4 @@ h1, h2, h3 {
 
 .course-details li {
     margin-bottom: 10px;
-}
-
-
-/* Specific to  Section languages */
-
-.languages .section-title {
-    padding-bottom: 0;
-}
-
-.languages .language-list {
-    padding: 0;
-}
-
-.languages .language-item {
-    padding: 5px 0;
-    border-bottom: 1px solid #ddd;
-    display: flex;
-    justify-content: space-between;
-}
-
-.languages .language-name {
-    font-weight: bold;
-    color: #0054ad;
-}
-
-.languages .language-level {
-    font-style: italic;
-    color: #6c757d;
-}
-
-.languages .language-item:last-child {
-    border-bottom: none;
 }
