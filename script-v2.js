@@ -7,6 +7,9 @@ function updateProgressBar() {
     const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     const progress = (scrollTop / scrollHeight) * 100;
     
-    document.getElementById("progress-bar").style.width = progress + "%";
+    const progressBar = document.getElementById("progress-bar");
+    console.log(progressBar); // Verifique se o elemento não é 'null'
+
+    progressBar.style.width = progress + "%";
     console.log("Script carregado!");
 }
