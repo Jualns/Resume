@@ -20,15 +20,13 @@ main {
 
 /* Conteúdo Principal - Esquerda */
 #content {
-    width: 70%;
-    padding: 2em;
+    width: 75%;
     text-wrap: balance;
 }
 
 /* Barra Lateral - Direita */
 #sidebar {
-    width: 30%;
-    padding: 2em;
+    width: 25%;
     overflow-wrap: break-word;
 }
 
@@ -38,20 +36,25 @@ main {
     top: 20px;
 }
 
+#sidebar section {
+    margin-bottom: 1em; /* Reduzindo a margem inferior apenas do sidebar */
+}
+
+
 /* Table of Contents */
 #table-of-contents {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     padding: 5px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     border-radius: 8px;
 }
 
 /* Contato */
 #contact {
-    background-color: #eef5f9;
-    border: 1px solid #cce7f0;
-    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 5px;
     border-radius: 8px;
 }
 
@@ -83,7 +86,7 @@ h3 {
 } 
 
 section {
-    margin: auto 1em 4em 2em;
+    margin: auto 0.5em 4em 1em;
 }
 
 i {
@@ -219,13 +222,14 @@ h1, h2, h3 {
     }
 
     #content {
-        width: 100%; /* O conteúdo principal ocupa toda a largura */
-        padding: 1em; /* Reduz o padding para evitar quebras */
+        width: 90%;
+        padding: 0;
     }
 
     #sidebar {
         width: 100%; /* Sidebar ocupa a largura total abaixo do conteúdo */
-        padding: 1em;
+        padding: 0;
+        order: -1; /* Move o sidebar para o topo */
     }
 
     h1 {
@@ -241,7 +245,7 @@ h1, h2, h3 {
     }
 
     .role-container, .company-container, .education-container {
-        padding-left: 10px; /* Reduz o padding para não ocupar muito espaço */
+        padding-left: 5px; /* Reduz o padding para não ocupar muito espaço */
     }
 }
 
@@ -261,9 +265,5 @@ h1, h2, h3 {
 
     .job-title {
         font-size: 1.2em;
-    }
-
-    #sidebar {
-        display: none; /* Se a sidebar não for essencial, você pode ocultá-la em telas muito pequenas */
     }
 }
