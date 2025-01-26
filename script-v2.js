@@ -8,4 +8,5 @@ function updateProgressBar() {
     const progress = (scrollTop / scrollHeight) * 100;
     
     document.getElementById("progress-bar").style.width = progress + "%";
+    console.log("Script carregado!");
 }
