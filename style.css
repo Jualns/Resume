@@ -267,3 +267,45 @@ h1, h2, h3 {
         font-size: 1.2em;
     }
 }
+
+/* Contêiner da barra */
+#progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Altura da barra */
+    background: rgba(0, 0, 0, 0.1); /* Cor de fundo sutil */
+    z-index: 1000; /* Mantém no topo */
+}
+
+/* Barra de progresso */
+#progress-bar {
+    height: 5px;
+    width: 0%;
+    background: #0073b1; /* Cor azul (ajuste como quiser) */
+    transition: width 0.1s ease-out;
+}
+
+
+@media print {
+    /* Oculta cabeçalhos e rodapés automáticos (depende do navegador) */
+    @page {
+        margin: 1cm; /* Define a margem da página */
+    }
+
+    /* Remove os links automáticos adicionados pelo navegador */
+    a[href]:after {
+        content: none !important;
+    }
+
+    /* Oculta o cabeçalho e rodapé automáticos do navegador (nem todos os navegadores respeitam) */
+    header, footer {
+        display: none !important;
+    }
+
+    /* Remove a barra de progresso, caso exista */
+    #progress-container {
+        display: none !important;
+    }
+}
