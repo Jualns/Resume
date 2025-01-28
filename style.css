@@ -1,11 +1,21 @@
 *{
     scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0073b1;
+    --secondary-color: #f9f9f9;
+    --border-color: #ddd;
+    --text-color-muted: #555;
+    --font-size-base: 14px;
+    --font-family-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Global Style */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 14px;
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
     max-width: 1200px;
     margin: auto;
     word-wrap: break-word;
@@ -44,17 +54,8 @@ main {
     margin-bottom: 1em; /* Reduzindo a margem inferior apenas do sidebar */
 }
 
-
-/* Table of Contents */
-#table-of-contents {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 5px;
-    /* margin-bottom: 20px; */
-    border-radius: 8px;
-}
-
-/* Contato */
+/* Contact  and Table of Contents*/
+#table-of-contents,
 #contact {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
@@ -71,7 +72,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     padding-bottom: 1em;
 }
 
@@ -81,13 +82,13 @@ h3 {
 }
 
 .job-title {
-    font-size: 1.4em; 
-    font-weight: bold; 
-    color: #0073b1; 
-    text-transform: uppercase; 
-    letter-spacing: 0.1em; 
-    display: block; 
-} 
+    font-size: 1.4em;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: block;
+}
 
 section {
     margin: auto 0.5em 4em 1em;
@@ -114,8 +115,8 @@ h1, h2, h3 {
 
 /* Specific to  Role and Company */
 .role-container {
-    border-left: 4px solid #0073b1;
-    background-color: #f9f9f9;
+    border-left: 4px solid var(--primary-color);
+    background-color: var(--secondary-color);
     padding: 15px;
     margin-bottom: 10px;
 }
@@ -220,6 +221,15 @@ h1, h2, h3 {
 }
 
 /* Ajustes para telas menores (celulares) */
+@media (max-width: 1024px) {
+    #content {
+        width: 70%;
+    }
+    #sidebar {
+        width: 30%;
+    }
+}
+
 @media (max-width: 768px) {
     main {
         flex-direction: column; /* Coloca o conteúdo e a barra lateral em uma única coluna */
