@@ -220,6 +220,42 @@ h1, h2, h3 {
     margin-bottom: 10px;
 }
 
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    padding: 1px; /* Espaçamento interno */
+    border-radius: 50%; /* Deixa o botão redondo */
+    font-size: 18px; /* Tamanho do ícone */
+    line-height: 1; /* Garante que o ícone fique centralizado verticalmente */
+    width: 2em; /* Largura fixa */
+    height: 2em; /* Altura fixa */
+    display: inline; /* Usa flexbox para centralizar */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center;
+    justify-content: center; /* Centraliza horizontalmente */
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+#back-to-top i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 100%;
+}
+
+#back-to-top:hover {
+    background-color: #0056b3;
+}
+
 /* Ajustes para telas menores (celulares) */
 @media (max-width: 1024px) {
     #content {
@@ -313,9 +349,13 @@ h1, h2, h3 {
         content: none !important;
     }
 
-    /* Oculta o cabeçalho e rodapé automáticos do navegador (nem todos os navegadores respeitam) */
-    header, footer {
-        display: none !important;
+    /* Oculta e rodapé automáticos do navegador (nem todos os navegadores respeitam) */
+    footer {
+        display: none;
+    }
+
+    #back-to-top{
+        display: none;
     }
 
     /* Remove a barra de progresso, caso exista */
