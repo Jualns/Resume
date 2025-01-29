@@ -57,8 +57,8 @@ main {
 /* Contact  and Table of Contents*/
 #table-of-contents,
 #contact {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--border-color);
     padding: 5px;
     border-radius: 8px;
 }
@@ -128,7 +128,7 @@ h1, h2, h3 {
 
 .company-header p {
     margin: 1px 15px 5px;
-    color: #555;
+    color: var(--text-color-muted);
     font-style: italic;
 }
 
@@ -138,7 +138,7 @@ h1, h2, h3 {
 
 
 .company-container {
-    border-left: 2px solid #0073b1;
+    border-left: 2px solid var(--primary-color);
     padding-left: 15px;
     margin-bottom: 30px;
 }
@@ -154,7 +154,7 @@ h1, h2, h3 {
 
 .role p {
     margin: 5px 0 10px;
-    color: #555;
+    color: var(--text-color-muted);
     font-style: italic;
 }
 
@@ -170,7 +170,7 @@ h1, h2, h3 {
 
 /* Estilo para a seção de Educação */
 .education-container {
-    border-left: 2px solid #0054ad;
+    border-left: 2px solid var(--primary-color);
     padding-left: 15px;
     margin-bottom: 20px;
 }
@@ -182,7 +182,7 @@ h1, h2, h3 {
 
 .education-header p {
     margin: 1px 15px 5px;
-    color: #555;
+    color: var(--text-color-muted);
     font-style: italic;
 }
 
@@ -192,8 +192,8 @@ h1, h2, h3 {
 
 /* Estilo para os cursos dentro da seção de Educação */
 .course-container {
-    border-left: 4px solid #0073b1;
-    background-color: #f9f9f9;
+    border-left: 4px solid var(--primary-color);
+    background-color: var(--secondary-color);
     padding: 15px;
     margin-bottom: 20px;
 }
@@ -201,12 +201,12 @@ h1, h2, h3 {
 .course-title {
     font-size: 1.5em;
     margin: 0;
-    color: #0073b1;
+    color: var(--primary-color);
 }
 
 .course-summary {
     margin: 5px 0 10px;
-    color: #555;
+    color: var(--text-color-muted);
     font-style: italic;
 }
 
@@ -297,7 +297,7 @@ h1, h2, h3 {
 #progress-bar {
     height: 5px;
     width: 0%;
-    background: #0073b1; /* Cor azul (ajuste como quiser) */
+    background: var(--primary-color); /* Cor azul (ajuste como quiser) */
     transition: width 0.1s ease-out;
 }
 
