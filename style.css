@@ -283,15 +283,15 @@ h1, h2, h3 {
     }
 
     h1 {
-        font-size: 2em; /* Reduz um pouco o tamanho do título */
+        font-size: 2.2em; /* Reduz um pouco o tamanho do título */
     }
 
     h2 {
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
     h3 {
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
 
     .role-container, .company-container, .education-container {
@@ -302,19 +302,19 @@ h1, h2, h3 {
 /* Ajustes para telas muito pequenas (menos de 480px) */
 @media (max-width: 480px) {
     body {
-        font-size: 12px; /* Diminui o tamanho da fonte para melhor ajuste */
+        font-size: 13px; /* Diminui o tamanho da fonte para melhor ajuste */
     }
 
     h1 {
-        font-size: 1.8em;
+        font-size: 2.2em;
     }
 
     h2 {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 
     .job-title {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 }
 
@@ -339,9 +339,9 @@ h1, h2, h3 {
 
 
 @media print {
-    /* Oculta cabeçalhos e rodapés automáticos (depende do navegador) */
     @page {
-        margin: 1cm; /* Define a margem da página */
+        margin: 1.25cm; /* Define a margem da página */
+        size: A4 portrait; /* ou landscape para horizontal */
     }
 
     /* Remove os links automáticos adicionados pelo navegador */
@@ -349,7 +349,6 @@ h1, h2, h3 {
         content: none !important;
     }
 
-    /* Oculta e rodapé automáticos do navegador (nem todos os navegadores respeitam) */
     footer {
         display: none;
     }
