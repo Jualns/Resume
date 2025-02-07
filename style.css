@@ -60,7 +60,6 @@ main {
     background-color: var(--secondary-color);
     border: 1px solid var(--border-color);
     padding: 5px;
-    border-radius: 8px;
 }
 
 
@@ -271,17 +270,6 @@ h1, h2, h3 {
         flex-direction: column; /* Coloca o conteúdo e a barra lateral em uma única coluna */
     }
 
-    #content {
-        width: 90%;
-        padding: 0;
-    }
-
-    #sidebar {
-        width: 100%; /* Sidebar ocupa a largura total abaixo do conteúdo */
-        padding: 0;
-        order: -1; /* Move o sidebar para o topo */
-    }
-
     h1 {
         font-size: 2.2em; /* Reduz um pouco o tamanho do título */
     }
@@ -292,6 +280,41 @@ h1, h2, h3 {
 
     h3 {
         font-size: 1.4em;
+    }
+
+
+    #content {
+        width: 100%;
+        padding: 0;
+    }
+
+    #sidebar {
+        width: 100%; /* Sidebar ocupa a largura total abaixo do conteúdo */
+        order: -1; /* Move o sidebar para o topo */
+        display: flex;
+    }
+
+    #sidebar-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+    #sidebar h2 {
+        padding-bottom: 5px;
+    }
+
+    #sidebar section {
+        margin-bottom: 10px;
+    }
+
+    #contact, #table-of-contents {
+        /* flex: 1; */
+        height: 150px;
+        width: 250px;
+        display: start;
+        flex-direction: column;
+        /* justify-content: center; */
     }
 
     .role-container, .company-container, .education-container {
@@ -359,6 +382,10 @@ h1, h2, h3 {
 
     /* Remove a barra de progresso, caso exista */
     #progress-container {
+        display: none !important;
+    }
+
+    #table-of-content {
         display: none !important;
     }
 }
