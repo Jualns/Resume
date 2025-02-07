@@ -35,7 +35,7 @@ main {
 /* Conteúdo Principal - Esquerda */
 #content {
     width: 75%;
-    text-wrap: balance;
+    text-wrap: pretty;
 }
 
 /* Barra Lateral - Direita */
