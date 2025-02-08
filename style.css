@@ -1,4 +1,4 @@
-*{
+* {
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
@@ -28,7 +28,7 @@ header {
 }
 
 /* Layout Principal */
-main { 
+main {
     display: flex;
 }
 
@@ -51,7 +51,8 @@ main {
 }
 
 #sidebar section {
-    margin-bottom: 1em; /* Reduzindo a margem inferior apenas do sidebar */
+    margin-bottom: 1em;
+    /* Reduzindo a margem inferior apenas do sidebar */
 }
 
 /* Contact  and Table of Contents*/
@@ -107,7 +108,9 @@ hr {
     height: 1px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 100;
     margin-bottom: 0;
 }
@@ -229,16 +232,25 @@ h1, h2, h3 {
     background-color: var(--primary-color);
     color: white;
     cursor: pointer;
-    padding: 1px; /* Espaçamento interno */
-    border-radius: 50%; /* Deixa o botão redondo */
-    font-size: 18px; /* Tamanho do ícone */
-    line-height: 1; /* Garante que o ícone fique centralizado verticalmente */
-    width: 2em; /* Largura fixa */
-    height: 2em; /* Altura fixa */
-    display: inline; /* Usa flexbox para centralizar */
-    align-items: center; /* Centraliza verticalmente */
+    padding: 1px;
+    /* Espaçamento interno */
+    border-radius: 50%;
+    /* Deixa o botão redondo */
+    font-size: 18px;
+    /* Tamanho do ícone */
+    line-height: 1;
+    /* Garante que o ícone fique centralizado verticalmente */
+    width: 2em;
+    /* Largura fixa */
+    height: 2em;
+    /* Altura fixa */
+    display: inline;
+    /* Usa flexbox para centralizar */
+    align-items: center;
+    /* Centraliza verticalmente */
     text-align: center;
-    justify-content: center; /* Centraliza horizontalmente */
+    justify-content: center;
+    /* Centraliza horizontalmente */
     text-decoration: none;
     transition: background-color 0.3s;
 }
@@ -260,6 +272,7 @@ h1, h2, h3 {
     #content {
         width: 70%;
     }
+
     #sidebar {
         width: 30%;
     }
@@ -267,11 +280,13 @@ h1, h2, h3 {
 
 @media (max-width: 768px) {
     main {
-        flex-direction: column; /* Coloca o conteúdo e a barra lateral em uma única coluna */
+        flex-direction: column;
+        /* Coloca o conteúdo e a barra lateral em uma única coluna */
     }
 
     h1 {
-        font-size: 2.2em; /* Reduz um pouco o tamanho do título */
+        font-size: 2.2em;
+        /* Reduz um pouco o tamanho do título */
     }
 
     h2 {
@@ -284,19 +299,25 @@ h1, h2, h3 {
 
 
     #content {
-        width: 100%;
+        width: 95%;
         padding: 0;
     }
 
     #sidebar {
-        width: 100%; /* Sidebar ocupa a largura total abaixo do conteúdo */
-        order: -1; /* Move o sidebar para o topo */
+        width: 100%;
+        /* Sidebar ocupa a largura total abaixo do conteúdo */
+        order: -1;
+        /* Move o sidebar para o topo */
         display: flex;
     }
 
     #sidebar-container {
         display: flex;
         justify-content: space-evenly;
+        flex-wrap: wrap;
+        /* Permite que os elementos quebrem linha se necessário */
+        gap: 10px;
+        /* Adiciona um pequeno espaçamento entre os elementos */
     }
 
 
@@ -308,24 +329,33 @@ h1, h2, h3 {
         margin-bottom: 10px;
     }
 
-    #contact, #table-of-contents {
+    #contact,
+    #table-of-contents {
         /* flex: 1; */
         height: 150px;
         width: 250px;
         display: start;
         flex-direction: column;
         /* justify-content: center; */
+        flex: 1 1 250px;
+        /* Permite que os elementos diminuam, mas tenham no mínimo 250px */
+        max-width: 100%;
+        /* Evita que fiquem maiores do que a tela */
     }
 
-    .role-container, .company-container, .education-container {
-        padding-left: 5px; /* Reduz o padding para não ocupar muito espaço */
+    .role-container,
+    .company-container,
+    .education-container {
+        padding-left: 5px;
+        /* Reduz o padding para não ocupar muito espaço */
     }
 }
 
 /* Ajustes para telas muito pequenas (menos de 480px) */
 @media (max-width: 480px) {
     body {
-        font-size: 13px; /* Diminui o tamanho da fonte para melhor ajuste */
+        font-size: 13px;
+        /* Diminui o tamanho da fonte para melhor ajuste */
     }
 
     h1 {
@@ -347,24 +377,30 @@ h1, h2, h3 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 5px; /* Altura da barra */
-    background: rgba(0, 0, 0, 0.1); /* Cor de fundo sutil */
-    z-index: 1000; /* Mantém no topo */
+    height: 5px;
+    /* Altura da barra */
+    background: rgba(0, 0, 0, 0.1);
+    /* Cor de fundo sutil */
+    z-index: 1000;
+    /* Mantém no topo */
 }
 
 /* Barra de progresso */
 #progress-bar {
     height: 5px;
     width: 0%;
-    background: var(--primary-color); /* Cor azul (ajuste como quiser) */
+    background: var(--primary-color);
+    /* Cor azul (ajuste como quiser) */
     transition: width 0.1s ease-out;
 }
 
 
 @media print {
     @page {
-        margin: 1.25cm; /* Define a margem da página */
-        size: A4 portrait; /* ou landscape para horizontal */
+        margin: 1.25cm;
+        /* Define a margem da página */
+        size: A4 portrait;
+        /* ou landscape para horizontal */
     }
 
     /* Remove os links automáticos adicionados pelo navegador */
@@ -376,7 +412,7 @@ h1, h2, h3 {
         display: none;
     }
 
-    #back-to-top{
+    #back-to-top {
         display: none;
     }
 
@@ -385,7 +421,7 @@ h1, h2, h3 {
         display: none !important;
     }
 
-    #table-of-content {
+    #table-of-contents {
         display: none !important;
     }
 }
