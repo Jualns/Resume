@@ -27,15 +27,32 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+footer {
+    margin: 0;
+    padding: 0;
+}
+
 /* Layout Principal */
 main {
     display: flex;
+}
+
+#Education {
+    margin-bottom: -25px; /* Reduzindo o tamanho final da página (gambiarra)*/
 }
 
 /* Conteúdo Principal - Esquerda */
 #content {
     width: 75%;
     text-wrap: pretty;
+}
+
+.skills-list {
+    margin-bottom: 0px;
+}
+
+.profile-and-skills {
+    margin-bottom: 1.5em;
 }
 
 /* Barra Lateral - Direita */
@@ -60,7 +77,11 @@ main {
 #contact {
     background-color: var(--secondary-color);
     border: 1px solid var(--border-color);
-    padding: 5px;
+    padding: 0 5px 5px 5px;
+
+    h2 {
+        margin-top: 0.5em;
+    }
 }
 
 
@@ -124,6 +145,10 @@ h3 {
     padding-bottom: 10px;
     padding-left: 15px;
     margin-bottom: 10px;
+    break-inside: avoid;
+    /* Evita que o conteúdo quebre em várias páginas */
+    page-break-inside: avoid;
+    /* Versão mais antiga, para compatibilidade */
 }
 
 .company-header h3 {
@@ -147,6 +172,16 @@ h3 {
     padding-left: 15px;
     margin-bottom: 30px;
 }
+
+#Experience {
+    margin-bottom: 10px;
+
+    .company-container:last-child {
+        margin-bottom: 10px;
+        /* Margem reduzida apenas para o último .company-container */
+    }
+}
+
 
 
 .role h4 {
@@ -174,7 +209,7 @@ h3 {
 .education-container {
     border-left: 2px solid var(--primary-color);
     padding-left: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .education-header h3 {
@@ -402,6 +437,15 @@ h3 {
         /* ou landscape para horizontal */
     }
 
+    body {
+        max-width: 767px;
+        /* Largura fixa de 768px */
+        margin: 0 auto;
+        /* Centraliza o conteúdo na página */
+        padding: 0;
+        /* Remove o padding padrão */
+    }
+
     hr {
         display: block !important;
         /* Garante que a linha seja renderizada */
@@ -447,4 +491,7 @@ h3 {
         padding-bottom: 0 !important;
     }
 
+    .profile-and-skills {
+        margin-bottom: 0.75em;
+    }
 }
