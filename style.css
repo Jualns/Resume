@@ -73,7 +73,7 @@ h1 {
 
 h2 {
     font-size: 1.4em;
-    padding-bottom: 1em;
+    padding-bottom: 0.85em;
 }
 
 h3 {
@@ -321,7 +321,7 @@ h3 {
 
 
     #sidebar h2 {
-        padding-bottom: 5px;
+        padding-bottom: 2px;
     }
 
     #sidebar section {
@@ -330,8 +330,8 @@ h3 {
 
     #contact,
     #table-of-contents {
-        /* flex: 1; */
-        height: 150px;
+        padding-top: 0px;
+        height: 145px;
         width: 250px;
         display: start;
         flex-direction: column;
@@ -396,7 +396,7 @@ h3 {
 
 @media print {
     @page {
-        margin: 1.25cm;
+        margin: 0.5cm;
         /* Define a margem da página */
         size: A4 portrait;
         /* ou landscape para horizontal */
@@ -418,8 +418,9 @@ h3 {
         content: none !important;
     }
 
-    header h1 {
+    #header h1 {
         padding-top: 0 !important;
+        padding-bottom: 10px !important;
     }
 
     footer {
