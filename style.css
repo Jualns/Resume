@@ -59,6 +59,15 @@ main {
 #sidebar {
     width: 25%;
     overflow-wrap: break-word;
+
+    h2 {
+        margin-bottom: 0.2em;
+        padding-bottom: 0; 
+    }
+
+    ul {
+        margin-top: 5px;
+    }
 }
 
 /* Estilo do Sidebar fixo ao rolar */
@@ -72,15 +81,22 @@ main {
     /* Reduzindo a margem inferior apenas do sidebar */
 }
 
+.language-switcher a {
+    display: block; /* Faz os links ficarem um abaixo do outro */
+    /* margin-bottom: 5px; */
+    padding: 0 5px 5px 15px;
+}
+
 /* Contact  and Table of Contents*/
 #table-of-contents,
+.language-switcher,
 #contact {
     background-color: var(--secondary-color);
     border: 1px solid var(--border-color);
     padding: 0 5px 5px 5px;
 
     h2 {
-        margin-top: 0.5em;
+        margin-top: 0.25em;
     }
 }
 
@@ -164,6 +180,7 @@ h3 {
 
 .company-description {
     margin-bottom: 15px !important;
+    display: none;
 }
 
 
@@ -187,6 +204,7 @@ h3 {
 .role h4 {
     font-size: 1.5em;
     margin: 0;
+    margin-top: -5px;
 }
 
 .role p {
@@ -364,9 +382,10 @@ h3 {
     }
 
     #contact,
+    .language-switcher,
     #table-of-contents {
         padding-top: 0px;
-        height: 145px;
+        height: 130px;
         width: 250px;
         display: start;
         flex-direction: column;
@@ -493,5 +512,9 @@ h3 {
 
     .profile-and-skills {
         margin-bottom: 0.75em;
+    }
+
+    .language-switcher {
+        display: none;
     }
 }
