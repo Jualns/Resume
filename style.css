@@ -8,7 +8,7 @@
     --secondary-color: #f9f9f9;
     --border-color: #ddd;
     --text-color-muted: #555;
-    --font-size-base: 14px;
+    --normal-text-color: black: --font-size-base: 12px;
     --font-family-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -37,8 +37,13 @@ main {
     display: flex;
 }
 
+#header h1 {
+    font-size: 2em;
+}
+
 #Education {
-    margin-bottom: -25px; /* Reduzindo o tamanho final da página (gambiarra)*/
+    margin-bottom: -25px;
+    /* Reduzindo o tamanho final da página (gambiarra)*/
 }
 
 /* Conteúdo Principal - Esquerda */
@@ -52,7 +57,8 @@ main {
 }
 
 .profile-and-skills {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.25em;
+    text-align: justify !important;
 }
 
 /* Barra Lateral - Direita */
@@ -62,7 +68,7 @@ main {
 
     h2 {
         margin-bottom: 0.2em;
-        padding-bottom: 0; 
+        padding-bottom: 0;
     }
 
     ul {
@@ -82,7 +88,8 @@ main {
 }
 
 .language-switcher a {
-    display: block; /* Faz os links ficarem um abaixo do outro */
+    display: block;
+    /* Faz os links ficarem um abaixo do outro */
     /* margin-bottom: 5px; */
     padding: 0 5px 5px 15px;
 }
@@ -102,24 +109,24 @@ main {
 
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     letter-spacing: .2em;
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
 h2 {
-    font-size: 1.4em;
+    font-size: 1.5em;
     padding-bottom: 0.85em;
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding-bottom: 0.2em;
 }
 
 .job-title {
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-weight: bold;
     color: var(--primary-color);
     text-transform: uppercase;
@@ -178,11 +185,6 @@ h3 {
     font-style: italic;
 }
 
-.company-description {
-    margin-bottom: 15px !important;
-    display: none;
-}
-
 
 .company-container {
     border-left: 2px solid var(--primary-color);
@@ -202,7 +204,7 @@ h3 {
 
 
 .role h4 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin: 0;
     margin-top: -5px;
 }
@@ -211,6 +213,18 @@ h3 {
     margin: 5px 0 10px;
     color: var(--text-color-muted);
     font-style: italic;
+}
+
+.role #skills-tecno {
+    color: var(--normal-text-color);
+    font-style: normal;
+    margin-bottom: 0px;
+    font-size: 0.8em;
+}
+
+.role #job-description {
+    font-size: 0.9em;
+    text-align: justify !important;
 }
 
 .role ul {
@@ -338,16 +352,16 @@ h3 {
     }
 
     h1 {
-        font-size: 2.2em;
+        font-size: 1.8em;
         /* Reduz um pouco o tamanho do título */
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
     h3 {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
 
 
@@ -378,7 +392,7 @@ h3 {
     }
 
     #sidebar section {
-        margin-bottom: 4px;
+        margin-bottom: 0px;
     }
 
     #contact,
@@ -407,20 +421,20 @@ h3 {
 /* Ajustes para telas muito pequenas (menos de 480px) */
 @media (max-width: 480px) {
     body {
-        font-size: 13px;
+        font-size: 10px;
         /* Diminui o tamanho da fonte para melhor ajuste */
     }
 
     h1 {
-        font-size: 2.2em;
+        font-size: 1.8em;
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
     .job-title {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 }
 
@@ -450,7 +464,7 @@ h3 {
 
 @media print {
     @page {
-        margin: 0.5cm;
+        margin: 0.2cm;
         /* Define a margem da página */
         size: A4 portrait;
         /* ou landscape para horizontal */
@@ -502,11 +516,13 @@ h3 {
     }
 
     #Profile {
+        margin-top: 0.35em;
         padding-bottom: 0.5em !important;
         /* Espaçamento reduzido apenas para esses títulos */
     }
 
     #Skills {
+        margin-top: 0.35em;
         padding-bottom: 0 !important;
     }
 
