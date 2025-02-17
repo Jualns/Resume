@@ -116,7 +116,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     padding-bottom: 0.85em;
 }
 
@@ -213,6 +213,7 @@ h3 {
     margin: 5px 0 10px;
     color: var(--text-color-muted);
     font-style: italic;
+    font-size: 0.8em;
 }
 
 .role #skills-tecno {
@@ -400,7 +401,7 @@ h3 {
     #table-of-contents {
         padding-top: 0px;
         height: 130px;
-        width: 250px;
+        width: 260px;
         display: start;
         flex-direction: column;
         /* justify-content: center; */

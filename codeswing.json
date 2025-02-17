@@ -1,4 +1,8 @@
 {
-  "scripts": [],
-  "styles": []
+  "scripts": [
+    "js/progress-bar.js"
+  ],
+  "styles": [
+    "styles.css"
+  ]
 }
