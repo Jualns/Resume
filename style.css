@@ -42,8 +42,13 @@ main {
 }
 
 #Education {
-    margin-bottom: -25px;
+    margin-bottom: -50px;
     /* Reduzindo o tamanho final da página (gambiarra)*/
+
+    h2 {
+        margin-bottom: 0;
+        padding-top: 0;
+    }
 }
 
 /* Conteúdo Principal - Esquerda */
@@ -54,6 +59,7 @@ main {
 
 .skills-list {
     margin-bottom: 0px;
+    margin-top: 0.5em;
 }
 
 .profile-and-skills {
@@ -117,7 +123,7 @@ h1 {
 
 h2 {
     font-size: 1.4em;
-    padding-bottom: 0.85em;
+    padding-bottom: 0.7em;
 }
 
 h3 {
@@ -168,9 +174,9 @@ h3 {
     padding-bottom: 10px;
     padding-left: 15px;
     margin-bottom: 10px;
-    break-inside: avoid;
+    /* break-inside: avoid; */
     /* Evita que o conteúdo quebre em várias páginas */
-    page-break-inside: avoid;
+    /* page-break-inside: avoid; */
     /* Versão mais antiga, para compatibilidade */
 }
 
@@ -258,6 +264,10 @@ h3 {
 
 .education-description {
     margin-bottom: 15px !important;
+}
+
+.year {
+    margin-right: 2em;
 }
 
 /* Estilo para os cursos dentro da seção de Educação */
@@ -525,6 +535,14 @@ h3 {
     #Skills {
         margin-top: 0.35em;
         padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    #Education h2 {
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-bottom: 0.5em;
+        padding-top: 0;
     }
 
     .profile-and-skills {
