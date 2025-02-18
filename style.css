@@ -195,7 +195,7 @@ h3 {
 .company-container {
     border-left: 2px solid var(--primary-color);
     padding-left: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 1.25em;
 }
 
 #Experience {
