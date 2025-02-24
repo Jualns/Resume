@@ -90,7 +90,7 @@ main {
 
 #sidebar section {
     margin-bottom: 1em;
-    /* Reduzindo a margem inferior apenas do sidebar */
+    margin-left: 0px;
 }
 
 .language-switcher a {
@@ -393,7 +393,7 @@ h3 {
         justify-content: space-evenly;
         flex-wrap: wrap;
         /* Permite que os elementos quebrem linha se necessário */
-        gap: 10px;
+        gap: 5px;
         /* Adiciona um pequeno espaçamento entre os elementos */
     }
 
@@ -406,12 +406,23 @@ h3 {
         margin-bottom: 0px;
     }
 
+    #contact {
+        width: 250;
+    }
+
+    #table-of-contents {
+        width: 260;
+    }
+
+    .language-switcher {
+        width: 180;
+    }
+
     #contact,
     .language-switcher,
     #table-of-contents {
         padding-top: 0px;
         height: 130px;
-        width: 260px;
         display: start;
         flex-direction: column;
         /* justify-content: center; */
@@ -446,6 +457,13 @@ h3 {
 
     .job-title {
         font-size: 1.4em;
+    }
+
+    #contact,
+    .language-switcher,
+    #table-of-contents {
+        width: 260px;
+        height: auto;
     }
 }
 
