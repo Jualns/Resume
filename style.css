@@ -549,7 +549,11 @@ h3 {
         margin-bottom: 0.75em;
     }
 
+    #contact {
+        width: 250;
+    }
+
     .language-switcher {
-        display: none;
+        width: 150;
     }
 }
