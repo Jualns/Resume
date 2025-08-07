@@ -1,116 +1,139 @@
-<html lang="pt-PT">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Currículo de Larissa do Carmo Arcega">
-    <meta name="keywords" content="currículo, atendimento ao cliente, varejo, loja, organização">
-    <meta name="author" content="Larissa do Carmo Arcega">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Currículo - Larissa do Carmo Arcega">
-    <meta property="og:description" content="Conheça meu perfil e experiência profissional em atendimento ao cliente.">
-    <meta property="og:url" content="[INSIRA URL SE HOUVER]">
-    <meta property="og:type" content="website">
-    <link rel="icon" type="image/png" href="../images/favicon.png">
-    <link rel="apple-touch-icon" href="../images/favicon.png">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com;">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="style_pitucha.css" rel="stylesheet">
-    <meta name="theme-color" content="#000000">
-    <meta name="color-scheme" content="light">
-    <title>Currículo - Larissa Arcega</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Victor da Silva - Data Analyst</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="progress-container"><div id="progress-bar"></div></div>
-    <header id="header">
-        <h1>Larissa do Carmo Arcega</h1>
-        <hr>
-        <span class="job-title">Assistente de Atendimento ao Cliente</span>
-        <hr>
+
+    <header class="hero-section">
+        <div class="container">
+            <h1>João Victor da Silva</h1>
+            <p class="subtitle">Data Analyst | Power BI | Python | SQL | ETL | Applied Mathematics | Excel</p>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> Curitiba, Paraná, Brazil</p>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/joao-victor-silva/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://jualns.github.io/Resume/" target="_blank" aria-label="Personal Website/Portfolio"><i class="fas fa-globe"></i></a>
+                <a href="mailto:josilva602@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+5541987717906" aria-label="Phone"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
     </header>
-    <main>
-        <section id="content">
-            <section class="profile-and-skills">
-                <h2 id="Profile">PERFIL E CONTATO</h2>
-                <p>Dedicada e atenciosa, sou uma profissional observadora e proativa nas tarefas do dia a dia. Tenho facilidade em me adaptar a ambientes dinâmicos e paixão por oferecer um atendimento de qualidade.</p>
-                <p>
-                    <i class="fas fa-phone" aria-hidden="true"></i> (41) 99898-4044<br>
-                    <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:Lariharcega@gmail.com">Lariharcega@gmail.com</a><br>
-                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Araucária - PR
-                </p>
-            </section>
-            <hr>
-            <section id="Experience">
-                <h2>EXPERIÊNCIA PROFISSIONAL</h2>
-                <div class="company-container">
-                    <div class="company-header">
-                        <h3>Sam's Gourmet</h3>
-                        <p><i><span class="year">Ago 2024 - Fev 2025</span> Produção de alimentos de alto padrão</i></p>
-                    </div>
-                    <div class="role-container">
-                        <div class="role">
-                            <h4>Cozinheira e Assistente Operacional</h4>
-                            <p><i>Empresa reformulada a partir da JK Choperia e Hamburgueria, auxiliei na transição organizando espaço e processos.</i></p>
-                            <ul>
-                                <li>Contribuí na criação e testes de receitas exclusivas para o cardápio.</li>
-                                <li>Gerenciei o estoque e organizei a abertura, garantindo eficiência diária.</li>
-                                <li>Mantive padrões de higiene em equipamentos e utensílios.</li>
-                            </ul>
-                            <p id="skills-tecno"><b>Habilidades:</b> Organização Operacional, Gestão de Estoque, Desenvolvimento de Receitas, Normas de Higiene.</p>
-                        </div>
-                    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#education">Educação</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="about" class="section-card">
+            <h2>Sobre Mim</h2>
+            <p>I’m a Data Analyst with a solid foundation in Applied Mathematics and Statistical Analysis. My focus is on designing and optimizing data models and pipelines, ensuring seamless integration, and enabling organizations to harness the full potential of their data. I’m passionate about building scalable, efficient solutions to tackle complex challenges and drive smarter decision-making.</p>
+        </section>
+
+        <section id="experience" class="section-card">
+            <h2>Experiência Profissional</h2>
+            <div class="job-entry">
+                <h3>Business Intelligence Analyst</h3>
+                <p class="company">GPC Química</p>
+                <p class="duration">September 2024 - Present | Araucária, Paraná, Brasil</p>
+                <ul>
+                    <li>Part of the Sales Administration team, responsible for developing strategic and critical analyses.</li>
+                    <li>Proficient in ETL processes, data modeling, and creating visualizations that enhance data comprehension.</li>
+                </ul>
+            </div>
+
+            <div class="job-entry">
+                <h3>Data Science Internship</h3>
+                <p class="company">GPC Química</p>
+                <p class="duration">October 2023 - August 2024 | Araucária, Paraná, Brasil</p>
+                <ul>
+                    <li>Applied statistical methods to optimize data analysis from Near-Infrared Spectroscopy (NIR).</li>
+                    <li>Developed AI models that reduced manual work by 10% in key information flows.</li>
+                </ul>
+            </div>
+
+            <div class="job-entry">
+                <h3>AI Researcher and Student</h3>
+                <p class="company">CiDAMO</p>
+                <p class="duration">August 2019 - December 2024 | Curitiba, Brazil</p>
+                <ul>
+                    <li>Specialized in machine learning, AI, and optimization to solve complex problems.</li>
+                    <li>Developed a neural network model reducing cancer diagnosis time by 20%.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education" class="section-card">
+            <h2>Educação</h2>
+            <div class="education-entry">
+                <h3>Bachelor, Applied Mathematics</h3>
+                <p class="institution">Federal University of Paraná</p>
+                <p class="duration">February 2018 - November 2024</p>
+            </div>
+        </section>
+
+        <section id="skills" class="section-card">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Marketing Analytics</li>
+                <li>Relational Databases</li>
+                <li>Power BI</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>ETL Processes</li>
+                <li>AI and ML</li>
+                <li>Excel</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="section-card">
+            <h2>Projetos de Power BI</h2>
+            <p>Aqui você pode incorporar seus projetos interativos do Power BI ou exibir imagens estáticas dos seus dashboards.</p>
+            <div class="project-gallery">
+                <div class="project-item">
+                    <h3>Projeto Power BI 1</h3>
+                    <iframe title="Título do Relatório" width="100%" height="400" src="LINK_DO_EMBED_DO_POWER_BI_AQUI" frameborder="0" allowFullScreen="true"></iframe>
+                    <p>Breve descrição do projeto 1.</p>
                 </div>
-                <div class="company-container">
-                    <div class="company-header">
-                        <h3>JK Choperia e Hamburgueria Araucária</h3>
-                        <p><i><span class="year">Fev 2023 - Ago 2024</span> Bares e restaurantes informais</i></p>
-                    </div>
-                    <div class="role-container">
-                        <div class="role">
-                            <h4>Assistente Geral e Cozinheira</h4>
-                            <ul>
-                                <li>Atuei no atendimento ao público com agilidade em alta demanda.</li>
-                                <li>Gerenciei o estoque, reduzindo desperdícios em 10%.</li>
-                                <li>Coordenei abertura e fechamento, combinando multitarefas de cozinha e limpeza.</li>
-                            </ul>
-                            <p id="skills-tecno"><b>Habilidades:</b> Atendimento ao Cliente, Multitarefa, Criação de Receitas, Gestão de Estoque.</p>
-                        </div>
-                    </div>
+                <div class="project-item">
+                    <h3>Projeto Power BI 2</h3>
+                    <img src="caminho/para/sua/imagem-projeto2.png" alt="Dashboard Power BI 2">
+                    <p>Breve descrição do projeto 2.</p>
                 </div>
-                <div class="company-container">
-                    <div class="company-header">
-                        <h3>Pyetra Restaurante</h3>
-                        <p><i><span class="year">Dez 2021 - Fev 2023</span> Restaurante familiar</i></p>
-                    </div>
-                    <div class="role-container">
-                        <div class="role">
-                            <h4>Atendente e Auxiliar de Cozinha</h4>
-                            <ul>
-                                <li>Atendi 80 clientes por dia, assegurando rapidez e satisfação.</li>
-                                <li>Auxiliei na preparação de pratos e organizei o estoque, reduzindo faltas em 25%.</li>
-                                <li>Colaborei na limpeza, seguindo normas de higiene.</li>
-                            </ul>
-                            <p id="skills-tecno"><b>Habilidades:</b> Trabalho em Equipe, Atendimento ao Cliente, Gestão de Estoque.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <hr>
-            <section id="Education">
-                <h2>EDUCAÇÃO E FORMAÇÃO</h2>
-                <div class="education-container">
-                    <div class="education-header">
-                        <h3>Ensino Médio (incompleto)</h3>
-                        <p>Pretendo finalizar os estudos em 2026.</p>
-                        <p><i><span class="year">Até o 2º ano concluído</span> CEEBJA Araucária</i></p>
-                    </div>
-                </div>
-            </section>
+            </div>
+        </section>
+
+        <section id="contact" class="section-card">
+            <h2>Contato</h2>
+            <p>Interessado em colaborar ou saber mais? Sinta-se à vontade para entrar em contato!</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <a href="mailto:josilva602@gmail.com">josilva602@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+5541987717906">+55 41 98771-7906</a></p>
+                <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/joao-victor-silva/" target="_blank">linkedin.com/in/joao-victor-silva</a></p>
+            </div>
+            <a href="mailto:josilva602@gmail.com" class="btn-primary">Enviar E-mail</a>
         </section>
     </main>
-    <a href="#header" id="back-to-top" title="Voltar ao topo"><i class="fas fa-arrow-up"></i></a>
-    <script src="../js/progress-bar.js" defer></script>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 João Victor da Silva. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
