@@ -151,9 +151,9 @@ main {
 
 /* Estilo para Entradas de Experiência/Educação */
 .job-entry, .education-entry {
-    margin-bottom: 2em;
-    padding-bottom: 1.5em;
-    border-bottom: 1px dashed rgba(0,0,0,0.1);
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px dashed rgba(0,0,0,0.3);
 }
 
 .job-entry:last-child, .education-entry:last-child {
@@ -177,6 +177,17 @@ main {
     font-size: 0.9em;
     color: #666;
     margin-bottom: 0.8em;
+}
+
+/* Ajuste para diminuir o tamanho da fonte para as skills/technologies */
+.job-entry p strong {
+    display: block; /* Garante que a linha se quebre para o texto da habilidade */
+    font-size: 0.9em;
+    margin-top: 0.5em; /* Adiciona um pouco de espaço acima */
+}
+.job-entry p strong + span, .job-entry p:last-of-type {
+    font-size: 0.8em; /* Aplica o tamanho da fonte menor para as habilidades */
+    color: #666;
 }
 
 /* Estilo das habilidades como botões */
@@ -369,17 +380,21 @@ footer {
     main {
         padding: 20px 0 0 0;
     }
-
+    
     .section-card {
         padding: 0;
         margin-bottom: 20px;
         border: none;
         box-shadow: none;
         background: transparent;
-        page-break-inside: avoid; /* Evita que uma seção seja cortada no meio */
+        page-break-inside: auto; /* Permite que a seção seja quebrada */
         opacity: 1 !important; /* Força visibilidade */
         transform: translateY(0) !important; /* Remove transformação */
         transition: none !important; /* Desativa transições para impressão */
+    }
+
+    .job-entry {
+        page-break-inside: auto; /* Mantém o bloco do trabalho unido */
     }
 
     .hero-section {
