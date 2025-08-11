@@ -183,7 +183,7 @@ main {
 #skills ul, #languages ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* Espaçamento entre os botões */
+    gap: 5px; /* Espaçamento entre os botões */
     padding: 0;
     margin: 0;
     list-style: none;
@@ -192,10 +192,10 @@ main {
 #skills li, #languages li {
     background-color: var(--dark-detail-color-15-opacity); /* tom escuro translúcido */
     color: var(--text-color);
-    padding: 8px 15px;
+    padding: 4px 12px;
     border-radius: 20px; /* deixa com formato de pílula */
     font-weight: 500;
-    font-size: 0.95em;
+    font-size: 0.9em;
     white-space: nowrap; /* evita quebra de linha dentro do botão */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
