@@ -8,9 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetElement = document.querySelector(targetId);
 
             if (targetElement) {
-                // Calculate offset for fixed navbar
                 const navbarHeight = document.querySelector('.navbar').offsetHeight;
-                const offsetTop = targetElement.offsetTop - navbarHeight - 20; // 20px extra padding
+                const offsetTop = targetElement.offsetTop - navbarHeight - 20;
 
                 window.scrollTo({
                     top: offsetTop,
@@ -44,5 +43,24 @@ document.addEventListener('DOMContentLoaded', () => {
         card.style.transform = 'translateY(20px)';
         card.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
         observer.observe(card);
+    });
+
+    // Garantir que todos os elementos sejam visíveis antes da impressão
+    window.addEventListener('beforeprint', () => {
+        sectionCards.forEach(card => {
+            card.style.opacity = 1;
+            card.style.transform = 'translateY(0)';
+            card.style.transition = 'none'; // Remove transições para evitar atrasos
+        });
+    });
+
+    // Opcional: Restaurar estado após impressão (se necessário)
+    window.addEventListener('afterprint', () => {
+        sectionCards.forEach(card => {
+            card.style.opacity = 0; // Restaura o estado inicial
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(card); // Reativa o observer
+        });
     });
 });

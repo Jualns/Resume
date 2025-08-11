@@ -2,6 +2,7 @@
 :root {
     --background-color: #F6F6F6;
     --dark-detail-color: #302A18;
+    --dark-detail-color-15-opacity: #302A1826;
     --text-color: #1C1C1C;
     --light-detail-color: #FDE4C3;
     --white-color: #FFFFFF;
@@ -29,21 +30,21 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 2.8em;
+    font-size: 2.2em;
     text-align: center;
     color: var(--white-color);
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.8em;
     border-bottom: 2px solid var(--light-detail-color);
-    padding-bottom: 0.5em;
-    margin-bottom: 1.5em;
+    padding-bottom: 0.1em;
+    margin-bottom: 0.5em;
 }
 
 h3 {
-    font-size: 1.4em;
-    margin-bottom: 0.5em;
+    font-size: 1.2em;
+    margin-bottom: 0.2em;
 }
 
 a {
@@ -178,6 +179,55 @@ main {
     margin-bottom: 0.8em;
 }
 
+/* Estilo das habilidades como botões */
+#skills ul, #languages ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espaçamento entre os botões */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#skills li, #languages li {
+    background-color: var(--dark-detail-color-15-opacity); /* tom escuro translúcido */
+    color: var(--text-color);
+    padding: 8px 15px;
+    border-radius: 20px; /* deixa com formato de pílula */
+    font-weight: 500;
+    font-size: 0.95em;
+    white-space: nowrap; /* evita quebra de linha dentro do botão */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+#skills h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: var(--dark-detail-color);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.language-switch a {
+    color: var(--white-color);
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid var(--white-color);
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.language-switch a:hover {
+    background-color: var(--white-color);
+    color: var(--dark-detail-color);
+}
+
 /* Contato */
 .contact-info p {
     margin-bottom: 10px;
@@ -203,6 +253,11 @@ main {
     background-color: var(--light-detail-color);
     color: var(--dark-detail-color);
     transform: translateY(-2px);
+}
+
+/* Mostrar elementos apenas na impressão */
+.print-only {
+    display: None !important;
 }
 
 /* Footer */
@@ -255,5 +310,110 @@ footer {
 
     .navbar ul li {
         margin: 5px 0;
+    }
+}
+
+@media print {
+    /* Variaveis de cor para impressão - tudo preto e branco */
+    :root {
+        --dark-detail-color: #000000;
+        --text-color: #000000;
+    }
+
+    /* Reset geral para impressão */
+    body {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        font-size: 10pt;
+        font-family: 'Georgia', serif; /* Fonte serifada para melhor legibilidade na impressão */
+        line-height: 1.4;
+    }
+
+    /* Ocultar elementos não essenciais */
+    .navbar,
+    .hero-section .contact-links,
+    #contact .btn-primary,
+    footer {
+        display: none !important;
+    }
+
+    /* Ocultar os projetos quando imprimir, deixando apenas os comentários escondidos*/
+    #projects iframe,
+    #projects img {
+        display: none !important;
+    }
+    
+
+    .powerbi-iframe {
+        display: none;
+    }
+    .print-link {
+        display: block !important;
+        font-size: 12pt;
+        color: blue;
+        text-decoration: underline;
+    }
+    .print-image {
+        display: block !important;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Layout e espaçamento */
+    .container {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    main {
+        padding: 20px 0 0 0;
+    }
+
+    .section-card {
+        padding: 0;
+        margin-bottom: 20px;
+        border: none;
+        box-shadow: none;
+        background: transparent;
+        page-break-inside: avoid; /* Evita que uma seção seja cortada no meio */
+        opacity: 1 !important; /* Força visibilidade */
+        transform: translateY(0) !important; /* Remove transformação */
+        transition: none !important; /* Desativa transições para impressão */
+    }
+
+    .hero-section {
+        padding: 0;
+        text-align: left;
+        border-bottom: 2px solid #000;
+        margin-bottom: 20px;
+    }
+
+    .hero-section h1 {
+        color: #000;
+        font-size: 1.6em;
+        margin-bottom: 5px;
+    }
+
+    .hero-section .subtitle {
+        font-size: 1em;
+        color: #000;
+        margin-bottom: 5px;
+    }
+
+    .hero-section .location {
+        font-size: 0.9em;
+        color: #000;
+    }
+
+    /* Ajustar listas para impressão */
+    ul {
+        list-style: disc;
+        padding-left: 20px;
+    }
+
+    /* Mostrar elementos apenas na impressão */
+    .print-only {
+        display: block !important;
     }
 }
