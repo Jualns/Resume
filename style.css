@@ -359,7 +359,7 @@ footer {
         display: none;
     }
     .print-link {
-        display: block !important;
+        display: inline !important;
         font-size: 12pt;
         color: blue;
         text-decoration: underline;
