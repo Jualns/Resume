@@ -6,6 +6,7 @@
     --text-color: #1C1C1C;
     --light-detail-color: #FDE4C3;
     --white-color: #FFFFFF;
+    --bottom-margin-section-card-when-print: 10px;
 }
 
 /* Reset Básico e Fontes */
@@ -134,7 +135,7 @@ main {
 
 .section-card {
     background-color: var(--white-color);
-    padding: 30px;
+    padding: 25px;
     margin-bottom: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
@@ -266,6 +267,12 @@ main {
     transform: translateY(-2px);
 }
 
+/* Centralizar iframe nos projetos */
+.project-item iframe {
+    display: block;
+    margin: 0 auto;
+}
+
 /* Mostrar elementos apenas na impressão */
 .print-only {
     display: None !important;
@@ -300,7 +307,7 @@ footer {
     }
 
     .section-card {
-        padding: 20px;
+        padding: 15px;
         margin-bottom: 20px;
     }
 }
@@ -383,7 +390,7 @@ footer {
     
     .section-card {
         padding: 0;
-        margin-bottom: 20px;
+        margin-bottom: var(--bottom-margin-section-card-when-print);
         border: none;
         box-shadow: none;
         background: transparent;
@@ -399,9 +406,9 @@ footer {
 
     .hero-section {
         padding: 0;
-        text-align: left;
+        text-align: center;
         border-bottom: 2px solid #000;
-        margin-bottom: 20px;
+        margin-bottom: var(--bottom-margin-section-card-when-print);
     }
 
     .hero-section h1 {
