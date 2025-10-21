@@ -63,4 +63,16 @@ document.addEventListener('DOMContentLoaded', () => {
             observer.observe(card); // Reativa o observer
         });
     });
+
+    // =============================================================
+    // Código para Ano Dinâmico
+    // -------------------------------------------------------------
+    const elementoAno = document.getElementById('anoAtual');
+    
+    if (elementoAno) {
+        const dataAtual = new Date();
+        const ano = dataAtual.getFullYear();
+        elementoAno.textContent = ano;
+    }
+    // =============================================================
 });
