@@ -150,7 +150,7 @@ main {
     list-style: disc;
 }
 
-/* Estilo para Entradas de Experiência/Educação */
+/* Estilo para Entradas de Experiência/Educação/Projetos */
 .job-entry, .education-entry {
     margin-bottom: 0.5em;
     padding-bottom: 0.5em;
@@ -158,6 +158,19 @@ main {
 }
 
 .job-entry:last-child, .education-entry:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Garante linha separadora entre projetos dentro da galeria */
+.project-gallery .project-item {
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px dashed rgba(0,0,0,0.3);
+}
+
+.project-gallery .project-item:last-child {
     border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
