@@ -6,7 +6,7 @@
     --text-color: #1C1C1C;
     --light-detail-color: #FDE4C3;
     --white-color: #FFFFFF;
-    --bottom-margin-section-card-when-print: 10px;
+    --bottom-margin-section-card-when-print: 5px;
 }
 
 /* Reset Básico e Fontes */
@@ -187,7 +187,7 @@ main {
     margin-top: 0.5em; /* Adiciona um pouco de espaço acima */
 }
 .job-entry p strong + span, .job-entry p:last-of-type {
-    font-size: 0.8em; /* Aplica o tamanho da fonte menor para as habilidades */
+    font-size: 1em; /* Aplica o tamanho da fonte menor para as habilidades */
     color: #666;
 }
 
@@ -220,7 +220,7 @@ main {
     color: var(--dark-detail-color);
 }
 
-.navbar-container {
+.navbar-container, .contact-info-cabecalho {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -413,14 +413,14 @@ footer {
 
     .hero-section h1 {
         color: #000;
-        font-size: 1.6em;
-        margin-bottom: 5px;
+        font-size: 1.8em;
+        margin-bottom: 4px;
     }
 
     .hero-section .subtitle {
-        font-size: 1em;
+        font-size: 1.5em;
         color: #000;
-        margin-bottom: 5px;
+        margin-bottom: 4px;
     }
 
     .hero-section .location {
