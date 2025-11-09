@@ -1,31 +1,36 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Smooth scrolling for navigation links
+    // Smooth scrolling for navigation links (somente para links internos)
     document.querySelectorAll('nav a').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
+            const href = this.getAttribute('href');
 
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
+            // Só intercepta links internos (#)
+            if (href && href.startsWith('#')) {
+                e.preventDefault();
 
-            if (targetElement) {
-                const navbarHeight = document.querySelector('.navbar').offsetHeight;
-                const offsetTop = targetElement.offsetTop - navbarHeight - 20;
+                const targetElement = document.querySelector(href);
 
-                window.scrollTo({
-                    top: offsetTop,
-                    behavior: 'smooth'
-                });
+                if (targetElement) {
+                    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                    const offsetTop = targetElement.offsetTop - navbarHeight - 20;
+
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
             }
+            // Caso contrário (links externos), o comportamento padrão é mantido
         });
     });
 
-    // Optional: Add a subtle fade-in effect for sections on scroll
+    // Fade-in para seções ao rolar a página
     const sectionCards = document.querySelectorAll('.section-card');
 
     const observerOptions = {
         root: null, // viewport
         rootMargin: '0px',
-        threshold: 0.1 // Trigger when 10% of the item is visible
+        threshold: 0.1 // Trigger quando 10% estiver visível
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
@@ -33,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (entry.isIntersecting) {
                 entry.target.style.opacity = 1;
                 entry.target.style.transform = 'translateY(0)';
-                observer.unobserve(entry.target); // Stop observing once animated
+                observer.unobserve(entry.target); // Para de observar após animar
             }
         });
     }, observerOptions);
@@ -45,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(card);
     });
 
-    // Garantir que todos os elementos sejam visíveis antes da impressão
+    // Garante que todos os elementos fiquem visíveis antes da impressão
     window.addEventListener('beforeprint', () => {
         sectionCards.forEach(card => {
             card.style.opacity = 1;
@@ -54,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Opcional: Restaurar estado após impressão (se necessário)
+    // Restaura estado após impressão (opcional)
     window.addEventListener('afterprint', () => {
         sectionCards.forEach(card => {
             card.style.opacity = 0; // Restaura o estado inicial
@@ -65,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // =============================================================
-    // Código para Ano Dinâmico
+    // Atualiza o ano dinamicamente no rodapé
     // -------------------------------------------------------------
     const elementoAno = document.getElementById('anoAtual');
     
