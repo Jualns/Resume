@@ -373,7 +373,10 @@ footer {
     #projects img {
         display: none !important;
     }
-    
+
+    #projects img.print-image {
+        display: block !important;
+    }
 
     .powerbi-iframe {
         display: none;
