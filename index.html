@@ -1,269 +1,230 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8"> <!-- Garante que caracteres especiais (acentos) sejam exibidos corretamente -->
-	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsividade -->
-	<meta name="description" content="The best Curriculum that you will see.">
-	<meta name="keywords" content="curriculum, cv, data, science, analytics, engineer, software, excel, Power bi">
-	<meta name="author" content="João Victor da Silva">
-	<meta name="robots" content="index, follow"> <!-- Permite que os motores de busca indexem seu site -->
-
-	<meta property="og:title" content="Curriculum - João Victor da Silva">
-	<meta property="og:description"
-		content="If you want to hire me or just know my professional carrer, check my curriculum.">
-	<meta property="og:url" content="https://jualns.github.io/Resume/">
-	<meta property="og:type" content="website">
-
-	<link rel="icon" type="image/png" href="images/favicon.png"> <!-- Ícone principal -->
-	<link rel="apple-touch-icon" href="images/favicon.png"> <!-- Ícone para iPhones -->
-
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Garante compatibilidade com o Microsoft Edge -->
-	<meta http-equiv="Content-Security-Policy"
-		content="default-src 'self'; script-src 'self'; style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com;">
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-	<link href="style.css" rel="stylesheet">
-
-	<meta name="theme-color" content="#000000"> <!-- Define a cor da barra do navegador no mobile -->
-	<meta name="color-scheme" content="light"> <!-- content="light dark" Adaptação para dark mode -->
-
-
-	<title>Curriculum - João Silva</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Victor da Silva - Data Analyst</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon_novo.png">
+    <link rel="apple-touch-icon" href="images/favicon_novo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 </head>
-
 <body>
-	<div id="progress-container">
-		<div id="progress-bar"></div>
-	</div>
-	<header id="header">
-		<h1>João Victor da Silva</h1>
-		<hr>
-		<span class="job-title">Data Analyst</span>
-		<hr>
-	</header>
-	<main>
-		<section id="content">
-			<section class="profile-and-skills">
-				<h2 id="Profile">PROFESSIONAL PROFILE</h2>
-				<p>
-					Data-driven professional with expertise in analytics, AI, and process optimization. Seeking
-					opportunities to deliver impactful solutions through data insights, innovative strategies and
-					committed to driving results in collaborative environments.
-				</p>
-				<hr>
 
-				<h2 id="Skills">PROFESSIONAL SKILLS</h2>
-				<ul class="skills-list">
-					<li><b>Technical:</b> Power BI, Excel, Python, SQL, ETL, Machine Learning (TensorFlow, XGBoost)</li>
-					<li><b>Statistical, Math and Engineering:</b> Expertise with Exploratory Data Analysis, Data
-						Pipelines, Process Optimization and Data Automation with Software Engineer experience</li>
-					<li><b>Analytical:</b> Data Storytelling, KPI Development, Statistical Analysis</li>
-					<li><b>Soft-Skills:</b> Proactive, Detail-Oriented and Effective Communicator </li>
-					<li><b>Leadership:</b> Cross-functional Collaboration, Mentoring, Project Ownership</li>
-				</ul>
-			</section>
-			<hr>
+    <header class="hero-section">
+        <div class="container">
+            <h1>João Victor da Silva</h1>
+            <p class="subtitle">Business Intelligence (BI) & Data Analyst | Analytics Engineer | Power BI (DAX) · Advanced SQL · Python · ETL · Automation & Pipeline</p>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/joao-victor-silva/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:joao.victor.data@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+5541987717906" aria-label="Phone"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+    </header>
 
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="language-switch">
+                <a href="https://jualns.github.io/Resume/pt">PT</a>
+            </div>
+        </div>
+    </nav>
 
-			<section id="Experience">
-				<h2>PROFESSIONAL CAREER</h2>
+    <main class="container">
+        <section id="about" class="section-card">
+            <h2>About Me</h2>
+            <p>I’m a data-driven problem solver passionate about turning complex information into actionable insights. I specialize in modeling, automation, and analytics to build scalable solutions that reduce costs, improve decision accuracy, and accelerate business results.</p>
+        </section>
 
-				<div class="company-container">
-					<div class="company-header">
-						<h3>GPC Química</h3>
-						<p><i><span class="year">Oct 2023 - Present</span> Leading resin producer.</i></p></i></p>
-					</div>
-					<div class="role-container">
-						<div class="role">
-							<h4>Business Intelligence Analyst</h4>
-							<p><i>Aug 2024 - Present</i></p>
-							<p>
-								Part of the Sales Administration team, responsible for developing strategic and critical
-								analyses, reporting directly to the Director and key business areas.
-							</p>
-							<ul>
-								<li><b>Automated ETL processes</b>, saving <b>2 days/week</b> of manual work.</li>
-								<li>Cut pricing workload by <b>15%</b> via automation.</li>
-								<li>Migrated 15 relatories <b>Tableau to Power BI Embedded</b>.
-								</li>
-								<li>Creating graphs, analysis and data storytelling for critical decisions in all
-									company</li>
-							</ul>
-							<p id="skills-tecno"><b>Skills/Technologies:</b> Power BI, SQL Server, Python, ETL, Tableau.
-							</p>
-						</div>
-					</div>
-					<div class="role-container">
-						<div class="role">
-							<h4>Data Science Intern</h4>
-							<p><i>Oct 2023 - Aug 2024</i></p>
-							<ul>
-								<li><b>Optimized NIR analysis</b>, cutting time by <b>98%</b> and Developed <b>AI
-										models</b>, reducing manual work by <b>10%</b>.</li>
-								<li>Research about <b>Design of Experiments (DoE)</b> to resin development.</li>
-							</ul>
-							<p id="skills-tecno"><b>Skills/Technologies:</b> ETL, Python, Process Optimization, Academic
-								Research.</p>
-						</div>
-					</div>
-				</div>
+        <section id="experience" class="section-card">
+            <h2>Experience</h2>
 
-				<div class="company-container">
-					<div class="company-header">
-						<h3>Brick Abode</h3>
-						<p><i><span class="year">Apr 2022 - Mar 2023</span> U.S. company focused on custom business
-								solutions.</i></p>
-					</div>
-					<div class="role-container">
-						<div class="role">
-							<h4>Software Engineer</h4>
-							<p>
-								On Epic Cash team, I contributed to developing and optimizing
-								cryptocurrency systems with a focus on automation, feature development, and quality
-								control.
-							</p>
-							<ul>
-								<li><b>Resolved critical bugs</b>, including fixing coin loss in wallets and build
-									<b>automated testing</b> workflows
-								</li>
-								<li><b>Optimized system performance</b>, cutting transaction processing time by
-									<b>50%</b>.
-								</li>
-								<li><b>Developed new features</b> for Epic Cash cryptocurrency.</li>
-							</ul>
-							<p id="skills-tecno"><b>Skills/Technologies:</b> Rust, Blockchain, Test Automation, GitHub,
-								Concurrency and Parallelism, Log Analysis.</p>
-						</div>
-					</div>
-				</div>
+            <div class="job-entry">
+                <h3>Data Analyst (Contractor)</h3>
+                <p class="company">MD Integrations</p>
+                <p class="duration">Mar 2026 – Jun 2026 | Remote (U.S.)</p>
+                <ul>
+                    <li>Data Modeling & Pipelines: Built and optimized scalable data models, dashboards, and SQL pipelines to enable reliable, high-performance analytics.</li>
+                    <li>Data Quality & Monitoring: Ensured data integrity and performance across the BI layer, proactively troubleshooting and resolving data issues.</li>
+                    <li>Leadership Partnership: Partnered with cross-functional leaders to define key business KPIs and deliver data-driven insights for strategic decision-making.</li>
+                </ul>
+                <p><strong>Skills/Technologies:</strong> Metabase, PostgreSQL, Advanced SQL, Data Modeling, ETL, Data Quality, KPI Definition.</p>
+            </div>
 
-				<div class="company-container">
-					<div class="company-header">
-						<h3>Gestão Inteligente</h3>
-						<p><i><span class="year">May 2023 - Aug 2023</span> Consulting firm focused on digital
-								transformation.</i></p>
-					</div>
-					<div class="role-container">
-						<div class="role">
-							<h4>Data Analyst</h4>
-							<ul>
-								<li><b>Developed KPIs</b>, optimize processes and <b>Created strategic dashboards</b>.
-								</li>
-								<li><b>Cut execution time on Excels by 98%</b>, from 30 min to seconds. <b>Improved DAX
-										queries by 40%</b>, reducing memory use.</li>
-							</ul>
-							<p id="skills-tecno"><b>Skills/Technologies:</b> Power BI (Power Query M and DAX),
-								Statistical Modeling and Analysis, Advanced Excel (Macros and VBA).</p>
-						</div>
-					</div>
-				</div>
+            <div class="job-entry">
+                <h3>Business Intelligence Analyst</h3>
+                <p class="company">GPC Química</p>
+                <p class="duration">Aug 2024 – Mar 2026 | Araucária, Paraná, Brazil</p>
+                <ul>
+                    <li>Delivered financial and operational analyses that supported executive decision-making, including income statement modeling, cash flow forecasting, and project feasibility evaluations that guided investment priorities.</li>
+                    <li>Led automation of forecasting processes, standardizing short-term revenue and sales models that improved prediction accuracy and reduced preparation time for business reviews.</li>
+                    <li>Built the company’s annual budget model, integrating Power BI dashboards and SQL-based data pipelines that provided real-time visibility into business performance.</li>
+                    <li>Implemented automated ETL workflows that eliminated repetitive manual tasks, saving approximately two days per week and increasing data reliability.</li>
+                    <li>Created financial dashboards and storytelling visuals that became key tools in board meetings, enabling data-driven decision-making across departments.</li>
+                </ul>
+                <p><strong>Skills/Technologies:</strong> Power BI, SQL Server, Financial Analysis, Forecasting, ETL, Tableau, SAS, PySpark, DataBricks, Scala.</p>
+            </div>
 
-				<div class="company-container">
-					<div class="company-header">
-						<h3>Tereos</h3>
-						<p><i><span class="year">Aug 2021 - Apr 2022</span> Leading sugar and industrial-alcohol
-								producer.</i></p>
-					</div>
-					<div class="role-container">
-						<div class="role">
-							<h4>Data Analyst – People Analytics (HR)</h4>
-							<ul>
-								<li><b>Developed</b> turnover KPIs. <b>Created</b> and <b>managed</b> employee
-									<b>database</b>
-								</li>
-								<li><b>Built Power Apps</b> for monitoring performance and risk.</li>
-								<li><b>Migrated all Tableau reports</b> to Power BI.</li>
-							</ul>
-							<p id="skills-tecno"><b>Skills/Technologies:</b> ETL, SQLite, Power BI, Tableau, Senior
-								System, Predictive Analysis.</p>
-						</div>
-					</div>
-				</div>
-			</section>
-			<hr>
-			<section id="Education">
-				<h2>EDUCATION AND COURSES</h2>
+            <div class="job-entry">
+                <h3>Data Scientist</h3>
+                <p class="company">GPC Química</p>
+                <p class="duration">Oct 2023 – Aug 2024 | Araucária, Paraná, Brazil</p>
+                <ul>
+                    <li>Redesigned the NIR analysis workflow, reducing processing time by 98% and enabling faster turnaround for sample validation.</li>
+                    <li>Developed AI models that automated routine laboratory steps, reducing manual effort by 10% and improving data consistency across experiments.</li>
+                    <li>Applied Design of Experiments (DoE) methodologies to accelerate new resin validation and enhance R&D efficiency.</li>
+                </ul>
+                <p><strong>Skills/Technologies:</strong> PySpark, DataBricks, ETL, Python, Process Optimization, Experimental Design.</p>
+            </div>
 
-				<div class="education-container">
-					<div class="education-header">
-						<h3>Bachelor’s in Applied Mathematics</h3>
-						<p><i><span class="year">2022-2024</span> Federal University of Paraná</i></p>
-					</div>
-				</div>
+            <div class="job-entry">
+                <h3>Software Engineer (Contractor)</h3>
+                <p class="company">Brick Abode</p>
+                <p class="duration">Apr 2022 – Mar 2023 | Remote (U.S.)</p>
+                <ul>
+                    <li>Contributed to the development of the Epic Cash cryptocurrency platform, focusing on automation, feature creation, and software reliability.</li>
+                    <li>Resolved critical system failures such as coin loss and implemented automated testing workflows to prevent recurrence of these issues.</li>
+                    <li>Enhanced system performance and scalability, reducing transaction time by 50% and improving user experience in high-concurrency environments.</li>
+                </ul>
+                <p><strong>Skills/Technologies:</strong> Rust, PySpark, Blockchain, Test Automation, GitHub, Concurrency, Log Analysis.</p>
+            </div>
 
-				<div class="education-container">
-					<div class="education-header">
-						<h3>Research Group CiDAMO</h3>
-						<p><i>Aug 2019 - Dec 2024</i></p>
-					</div>
-					<div class="role-container">
-						<div class="role">
-							<h4>AI Researcher</h4>
-							<p class="course-summary">
-								Specialized in machine learning, AI, and optimization, solving complex problems in
-								fields such as medical imaging and financial modeling.
-							</p>
-							<ul>
-								<li><b>Developed AI for medical imaging</b>, cutting cancer diagnosis time by 20%.</li>
-								<li><b>Optimized ML models</b>, reducing training time by 30%.</li>
-								<li><b>Applied time-series models</b> for finance and forecasting.</li>
-							</ul>
-							<p id="skills-tecno"><b>Skills/Technologies:</b> Machine Learning (AI/ML), Big Data, Data
-								Analysis, Teamwork.</p>
-						</div>
-					</div>
-				</div>
-			</section>
-		</section>
+            <div class="job-entry">
+                <h3>Data Analyst – People Analytics</h3>
+                <p class="company">Tereos</p>
+                <p class="duration">Aug 2021 – Apr 2022 | Brazil</p>
+                <ul>
+                    <li>Developed turnover KPIs and automated data workflows to give HR leaders real-time insights into workforce trends and attrition risks.</li>
+                    <li>Created Power Apps for proactive monitoring of performance indicators and risk alerts, enabling faster responses to operational challenges.</li>
+                    <li>Led the migration of Tableau reports to Power BI, improving report governance and usability for HR managers.</li>
+                </ul>
+                <p><strong>Skills/Technologies:</strong> Power BI, Scala, ETL, SQLite, Tableau, DataBricks, Predictive Analytics.</p>
+            </div>
+        </section>
 
-		<aside id="sidebar">
-			<div id="sidebar-container">
-				<section>
-					<div class="language-switcher">
-						<h2>LANGUAGE</h2>
-						<a href="https://jualns.github.io/Resume/">English</a>
-						<a href="https://jualns.github.io/Resume/pt">Português</a>
-					</div>
-				</section>
-				<section>
-					<nav id="table-of-contents">
-						<h2>TABLE OF CONTENTS</h2>
-						<ul>
-							<li><a href="#Profile">Professional Profile</a></li>
-							<li><a href="#Skills">Skills</a></li>
-							<li><a href="#Experience">Experience</a></li>
-							<li><a href="#Education">Education</a></li>
-						</ul>
-					</nav>
-				</section>
-				<section>
-					<nav id="contact">
-						<h2>CONTACT</h2>
-						<!-- contact info including social media -->
-						<p>
-							<i class="fa fa-envelope" aria-hidden="true"></i>
-							<a href="mailto:joao.victor.data@gmail.com">joao.victor.data@gmail.com</a>
-						</p>
-						<p>
-							<i class="fab fa-github" aria-hidden="true"></i>
-							<a href="https://github.com/Jualns" target="_blank" rel="noopener noreferrer">Jualns</a>
-						</p>
-						<p>
-							<i class="fab fa-linkedin" aria-hidden="true"></i>
-							<a href="https://www.linkedin.com/in/joao-victor-silva/?locale=en_US" target="_blank"
-								rel="noopener noreferrer">João
-								Silva</a>
-						</p>
-					</nav>
-				</section>
-			</div>
-		</aside>
-	</main>
-	<a href="#header" id="back-to-top" title="Voltar ao topo"><i class="fas fa-arrow-up"></i></a>
-	<script src="js/progress-bar.js" defer></script>
+        <section id="education" class="section-card">
+            <h2>Education</h2>
+            <div class="education-entry">
+                <h3>Bachelor, Applied Mathematics</h3>
+                <p class="institution">Federal University of Paraná</p>
+                <p class="duration">February 2018 - November 2024</p>
+            </div>
+        </section>
+
+        <section id="skills" class="section-card">
+            <h2>Skills</h2>
+
+            <h3>Technical</h3>
+            <ul>
+                <li>Power BI / Tableau</li>
+                <li>Advanced Excel</li>
+                <li>Python</li>
+                <li>Rust</li>
+                <li>SQL</li>
+                <li>ETL Processes</li>
+                <li>Artificial Intelligence</li>
+                <li>Machine Learning (TensorFlow, XGBoost)</li>
+            </ul>
+
+            <h3>Statistical, Math and Engineering</h3>
+            <ul>
+                <li>Applied Mathematics</li>
+                <li>Exploratory Data Analysis</li>
+                <li>Data Pipelines</li>
+                <li>Process Optimization</li>
+                <li>Data Automation</li>
+                <li>Software Engineering</li>
+            </ul>
+
+            <h3>Analytical</h3>
+            <ul>
+                <li>Data Storytelling</li>
+                <li>KPI Development</li>
+                <li>Statistical Analysis</li>
+                <li>Data Visualization</li>
+            </ul>
+
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Proactive</li>
+                <li>Detail-Oriented</li>
+                <li>Effective Communication</li>
+                <li>Leadership</li>
+                <li>Cross-functional Collaboration</li>
+                <li>Project Ownership</li>
+            </ul>
+
+        </section>
+
+        <section id="languages" class="section-card">
+            <h2>Languages</h2>
+            <ul>
+                <li>Portuguese – Native</li>
+                <li>English – Fluent</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="section-card">
+            <h2>Projects</h2>
+            <p class="print-only"><strong>Note:</strong> A better presentation is available in the <a href="https://jualns.github.io/Resume/" class="print-link">online version</a> of this portfolio.</p>
+            <div class="project-gallery">
+                <div class="project-item">
+                    <h3>Power BI: Weight Analysis</h3>
+                    <img 
+                        src="images/project/demo-personal-health.gif" 
+                        alt="Personal Health Demo GIF" 
+                        style="max-width:100%; border-radius:6px;"
+                        class="no-print"
+                    >
+
+                    <img 
+                        src="images/project/image-personal-health.png"
+                        alt="Personal Health Static Image"
+                        class="print-image"
+                        style="display:none; max-width:100%; border-radius:6px;"
+                    >
+
+                    <p>Developed a Power BI solution that enhanced data traceability and delivered actionable insights through automated pipelines and time-based analysis, resulting in faster operational decision-making.</p>
+                </div>
+
+                <div class="project-item">
+                    <h3>AI for Breast Cancer Image Classification</h3>
+                    <a href="https://github.com/Jualns/Neoplasia-Image-Classification" class="print-link" target="_blank">GitHub Repository</a>
+                    <p>Collaborated with doctors and medical researchers to build a neural network model that identifies high-density cancer cell regions in histological images of breast tissue.</p>
+                    <p>The project reduced manual screening time by prioritizing images for expert review, improving diagnostic workflow efficiency by nearly 50%.</p>
+                    <p><strong>Technologies:</strong> Python, TensorFlow, OpenCV, Scikit-learn, Google Colab.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-card">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <a href="mailto:joao.victor.data@gmail.com">joao.victor.data@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+5541987717906">+55 41 98771-7906</a></p>
+                <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/joao-victor-silva/" target="_blank">linkedin.com/in/joao-victor-silva</a></p>
+            </div>
+            <a href="mailto:joao.victor.data@gmail.com" class="btn-primary">Send E-mail</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="anoAtual">2026</span> João Victor da Silva.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
-
 </html>
