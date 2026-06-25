@@ -450,6 +450,11 @@ footer {
         padding-left: 20px;
     }
 
+    h2 {
+        font-size: 1.5em;
+        margin-bottom: 0.25em;
+}
+
     /* Mostrar elementos apenas na impressão */
     .print-only {
         display: block !important;
