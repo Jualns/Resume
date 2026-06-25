@@ -1,0 +1,457 @@
+/* Variáveis de Cores */
+:root {
+    --background-color: #F6F6F6;
+    --dark-detail-color: #302A18;
+    --dark-detail-color-15-opacity: #302A1826;
+    --text-color: #1C1C1C;
+    --light-detail-color: #FDE4C3;
+    --white-color: #FFFFFF;
+    --bottom-margin-section-card-when-print: 5px;
+}
+
+/* Reset Básico e Fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    scroll-behavior: smooth; /* Animação suave para rolagem */
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-detail-color);
+    margin-bottom: 0.8em;
+}
+
+h1 {
+    font-size: 2.2em;
+    text-align: center;
+    color: var(--white-color);
+}
+
+h2 {
+    font-size: 1.8em;
+    border-bottom: 2px solid var(--light-detail-color);
+    padding-bottom: 0.1em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.2em;
+}
+
+a {
+    color: var(--dark-detail-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--light-detail-color);
+}
+
+ul {
+    list-style: none;
+}
+
+/* Layout Geral */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section (Cabeçalho) */
+.hero-section {
+    background-color: var(--dark-detail-color);
+    color: var(--white-color);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-section .subtitle {
+    font-size: 1.4em;
+    margin-top: 10px;
+    color: var(--light-detail-color);
+}
+
+.hero-section .location {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.hero-section .contact-links {
+    margin-top: 30px;
+}
+
+.hero-section .contact-links a {
+    color: var(--white-color);
+    font-size: 1.8em;
+    margin: 0 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--dark-detail-color);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: var(--white-color);
+    font-weight: bold;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Seções de Conteúdo */
+main {
+    padding: 40px 0;
+}
+
+.section-card {
+    background-color: var(--white-color);
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.section-card p {
+    margin-bottom: 1em;
+}
+
+.section-card ul {
+    margin-left: 20px;
+    list-style: disc;
+}
+
+/* Estilo para Entradas de Experiência/Educação/Projetos */
+.job-entry, .education-entry {
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px dashed rgba(0,0,0,0.3);
+}
+
+.job-entry:last-child, .education-entry:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Garante linha separadora entre projetos dentro da galeria */
+.project-gallery .project-item {
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px dashed rgba(0,0,0,0.3);
+}
+
+.project-gallery .project-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.job-entry h3, .education-entry h3 {
+    margin-bottom: 0.2em;
+    color: var(--dark-detail-color);
+}
+
+.job-entry .company, .education-entry .institution {
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 0.2em;
+}
+
+.job-entry .duration, .education-entry .duration {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 0.8em;
+}
+
+/* Ajuste para diminuir o tamanho da fonte para as skills/technologies */
+.job-entry p strong {
+    display: block; /* Garante que a linha se quebre para o texto da habilidade */
+    font-size: 0.9em;
+    margin-top: 0.5em; /* Adiciona um pouco de espaço acima */
+}
+.job-entry p strong + span, .job-entry p:last-of-type {
+    font-size: 1em; /* Aplica o tamanho da fonte menor para as habilidades */
+    color: #666;
+}
+
+/* Estilo das habilidades como botões */
+#skills ul, #languages ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* Espaçamento entre os botões */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#skills li, #languages li {
+    background-color: var(--dark-detail-color-15-opacity); /* tom escuro translúcido */
+    color: var(--text-color);
+    padding: 4px 12px;
+    border-radius: 20px; /* deixa com formato de pílula */
+    font-weight: 500;
+    font-size: 0.9em;
+    white-space: nowrap; /* evita quebra de linha dentro do botão */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+#skills h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: var(--dark-detail-color);
+}
+
+.navbar-container, .contact-info-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.language-switch a {
+    color: var(--white-color);
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid var(--white-color);
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.language-switch a:hover {
+    background-color: var(--white-color);
+    color: var(--dark-detail-color);
+}
+
+/* Contato */
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: var(--dark-detail-color);
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--dark-detail-color);
+    color: var(--white-color);
+    padding: 12px 25px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--light-detail-color);
+    color: var(--dark-detail-color);
+    transform: translateY(-2px);
+}
+
+/* Centralizar iframe nos projetos */
+.project-item iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Mostrar elementos apenas na impressão */
+.print-only {
+    display: None !important;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-detail-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .hero-section {
+        padding: 60px 0;
+    }
+
+    .navbar ul li {
+        margin: 0 8px;
+    }
+
+    .section-card {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-section .subtitle {
+        font-size: 1.1em;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+    }
+}
+
+@media print {
+    /* Variaveis de cor para impressão - tudo preto e branco */
+    :root {
+        --dark-detail-color: #000000;
+        --text-color: #000000;
+    }
+
+    /* Reset geral para impressão */
+    body {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        font-size: 10pt;
+        font-family: 'Georgia', serif; /* Fonte serifada para melhor legibilidade na impressão */
+        line-height: 1.4;
+    }
+
+    /* Ocultar elementos não essenciais */
+    .navbar,
+    .hero-section .contact-links,
+    #contact .btn-primary,
+    footer {
+        display: none !important;
+    }
+
+    /* Ocultar os projetos quando imprimir, deixando apenas os comentários escondidos*/
+    #projects iframe,
+    #projects img {
+        display: none !important;
+    }
+
+    #projects img.print-image {
+        display: block !important;
+    }
+
+    .powerbi-iframe {
+        display: none;
+    }
+    .print-link {
+        display: inline !important;
+        font-size: 12pt;
+        color: blue;
+        text-decoration: underline;
+    }
+    .print-image {
+        display: block !important;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Layout e espaçamento */
+    .container {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    main {
+        padding: 20px 0 0 0;
+    }
+    
+    .section-card {
+        padding: 0;
+        margin-bottom: var(--bottom-margin-section-card-when-print);
+        border: none;
+        box-shadow: none;
+        background: transparent;
+        page-break-inside: auto; /* Permite que a seção seja quebrada */
+        opacity: 1 !important; /* Força visibilidade */
+        transform: translateY(0) !important; /* Remove transformação */
+        transition: none !important; /* Desativa transições para impressão */
+    }
+
+    .job-entry {
+        page-break-inside: auto; /* Mantém o bloco do trabalho unido */
+    }
+
+    .hero-section {
+        padding: 0;
+        text-align: center;
+        border-bottom: 2px solid #000;
+        margin-bottom: var(--bottom-margin-section-card-when-print);
+    }
+
+    .hero-section h1 {
+        color: #000;
+        font-size: 1.8em;
+        margin-bottom: 4px;
+    }
+
+    .hero-section .subtitle {
+        font-size: 1.5em;
+        color: #000;
+        margin-bottom: 4px;
+    }
+
+    .hero-section .location {
+        font-size: 0.9em;
+        color: #000;
+    }
+
+    /* Ajustar listas para impressão */
+    ul {
+        list-style: disc;
+        padding-left: 20px;
+    }
+
+    /* Mostrar elementos apenas na impressão */
+    .print-only {
+        display: block !important;
+    }
+}

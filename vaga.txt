@@ -1,0 +1,66 @@
+Link: https://nexmuv.notion.site/5529-Analista-de-Dados-S-nior-Power-BI-e-Analytics-3811d2a62e1380e0830cc67241c7d1b7
+Empresa Nexmuv
+# 5529 - Analista de Dados Sênior – Power BI e Analytics
+
+## Sobre a posição
+
+### Analista de Dados Sênior – Power BI e Analytics
+
+📍 Modelo de atuação: Remoto ou Híbrido
+
+📑 Modelo de contratação: PJ
+
+### Sobre a oportunidade
+
+Buscamos um(a) Analista de Dados Sênior com sólida experiência em Power BI e Analytics para atuar na construção e evolução de dashboards corporativos, financeiros e contábeis. O profissional será responsável por transformar dados em informações estratégicas, apoiando a tomada de decisão por meio de indicadores e análises de alto valor agregado.
+
+Procuramos alguém com perfil analítico, visão de negócio e capacidade de interagir diretamente com stakeholders, traduzindo necessidades em soluções analíticas eficientes e escaláveis.
+
+### Principais Responsabilidades
+
+- Desenvolver, manter e evoluir dashboards e relatórios corporativos no Power BI;
+- Criar indicadores e KPIs para áreas financeiras, contábeis e administrativas;
+- Levantar requisitos junto às áreas de negócio e transformá-los em soluções analíticas;
+- Construir e manter medidas, cálculos e métricas utilizando DAX;
+- Garantir a qualidade, performance e usabilidade dos dashboards;
+- Validar dados e regras de negócio com usuários e áreas responsáveis;
+- Apoiar iniciativas de governança de indicadores e padronização de relatórios;
+- Documentar métricas, regras de negócio e processos analíticos;
+- Atuar como referência técnica em projetos de Business Intelligence e Analytics.
+
+### Requisitos
+
+- Experiência sólida com **Power BI**;
+- Conhecimento avançado em **DAX**;
+- Experiência na construção de dashboards executivos e gerenciais;
+- Conhecimento avançado em **SQL**, especialmente em **Microsoft SQL Server**;
+- Experiência com modelagem dimensional (**Star Schema**);
+- Vivência no consumo e entendimento de modelos semânticos;
+- Capacidade de traduzir requisitos de negócio em indicadores, métricas e análises;
+- Experiência com indicadores financeiros, contábeis ou corporativos;
+- Boa comunicação e habilidade para interação com diferentes áreas do negócio.
+
+### Diferenciais
+
+- Conhecimento em **Microsoft Fabric;**
+- Experiência com **Python** para análises e automações;
+- Conhecimento em **Apache Airflow**;
+- Experiência com **Docker e Kubernetes**;
+- Conhecimento em **Git** e versionamento de código;
+- Vivência com **Data Warehouse e Data Lake;**
+- Experiência com governança e qualidade de dados;
+- Certificação **Microsoft PL-300 (Power BI Data Analyst)**;
+- Experiência em instituições de ensino, empresas de serviços ou ambientes corporativos complexos.
+
+### Perfil Comportamental
+
+- Perfil consultivo e orientado a resultados;
+- Capacidade de atuar com autonomia e senso de prioridade;
+- Facilidade para interagir com executivos e gestores;
+- Pensamento analítico e visão de negócio;
+- Organização e atenção aos detalhes;
+- Proatividade na identificação de oportunidades e propostas de melhoria.
+
+---
+
+### Candidatar-se
